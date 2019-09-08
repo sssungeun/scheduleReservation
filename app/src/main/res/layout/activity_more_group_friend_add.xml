@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray"
+    >
+        <ImageView
+                android:id="@+id/iv_more_group_add_friend_btn_back"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_arrow_back"
+                android:layout_marginRight="15dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="친구 추가"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/noto_sans_kr_medium_hestia"
+        />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+            android:id="@+id/ll_signup_act_email"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+    >
+        <TextView
+                android:id="@+id/tv_signup_act_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textSize="12sp"
+                android:textColor="#9e9e9e"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/noto_sans_kr_regular_hestia"
+                android:includeFontPadding="false"
+        />
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+        >
+            <EditText
+                    android:id="@+id/edit_signup_act_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/signup_border_off"
+                    android:textColor="#000000"
+            />
+
+            <TextView
+                    android:id="@+id/tv_signup_act_email_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인증"
+                    android:textSize="16sp"
+                    android:textColor="#bdbdbd"
+                    android:fontFamily="@font/noto_sans_kr_bold_hestia"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:includeFontPadding="false"
+            />
+
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/tv_signup_act_email_pattern_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증가능한 이메일을 입력해주세요"
+                android:textColor="#9e9e9e"
+                android:textSize="12sp"
+                android:layout_below="@+id/edit_signup_act_email"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/noto_sans_kr_regular_hestia"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="16dp"
+        />
+
+    </LinearLayout>
+</LinearLayout>

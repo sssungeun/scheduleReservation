@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray"
+    >
+
+        <ImageView
+                android:id="@+id/iv_more_group_add_name_btn_back"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_arrow_back"
+                android:layout_marginRight="15dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그룹 만들기"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/noto_sans_kr_medium_hestia"
+        />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+    >
+        <ImageView
+                android:id="@+id/iv_group_add_profile"
+                android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/image_120189"
+             />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="52dp"
+            android:layout_marginTop="23dp">
+    <EditText
+            android:id="@+id/edit_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="그룹명 입력"
+            android:gravity="center"
+    />
+
+    </RelativeLayout>
+    <Button
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_group_add"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="만들기"
+    />
+</LinearLayout>

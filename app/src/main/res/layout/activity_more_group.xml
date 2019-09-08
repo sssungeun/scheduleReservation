@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/gray"
+        >
+            <ImageView
+                    android:id="@+id/iv_more_group_managing_btn_back"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/btn_arrow_back"
+                    android:layout_marginRight="15dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그룹관리"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/noto_sans_kr_medium_hestia"
+            />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+    android:layout_marginTop="16dp">
+
+
+        <ImageView android:layout_width="78dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/iv_group_add"
+                   android:src="@drawable/userplus_120258"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        android:text="그룹 만들기"
+                  android:id="@+id/tv_group_add"
+                  android:textSize="24dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"/>
+
+
+        <ImageView
+                android:layout_marginLeft="90dp"
+                android:layout_width="28dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/iv_friend_add"
+                   android:src="@drawable/userplus_120258"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="친구추가"
+                  android:id="@+id/tv_friend_add"
+                  android:textSize="16dp"
+                  android:layout_gravity="center"
+                  android:textColor="#000000"/>
+
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_more_group_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+</LinearLayout>
+</LinearLayout>

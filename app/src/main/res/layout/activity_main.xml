@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/gray"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+            <ImageView
+                    android:id="@+id/btn_main_home"
+                    android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/top_nav_home"/>
+            <ImageView
+                    android:id="@+id/btn_main_search"
+                    android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_marginLeft="260dp"
+                       android:src="@drawable/search_btn"/>
+            <ImageView
+                    android:id="@+id/btn_main_notice"
+                    android:layout_width="33dp"
+                       android:layout_height="33dp"
+                       android:layout_marginLeft="10dp"
+                       android:src="@drawable/btn_notice"/>
+            <ImageView
+                    android:id="@+id/btn_main_more"
+                    android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginLeft="10dp"
+                       android:src="@drawable/top_nav_more"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_main"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/tab_send"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

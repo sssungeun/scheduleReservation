@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray"
+    >
+        <ImageView
+                android:id="@+id/iv_more_group_select_friend_btn_back"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_arrow_back"
+                android:layout_marginRight="15dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그룹 만들기"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/noto_sans_kr_medium_hestia"
+        />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="50dp"
+                  android:layout_gravity="right"
+                  android:layout_marginRight="20dp"
+    >
+
+        <ImageView android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:src="@drawable/btn_arrow_next"
+                   android:id="@+id/btn_group_add_next"
+
+        />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_more_group_select_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

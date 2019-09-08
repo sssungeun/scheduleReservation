@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical"
+android:background="?attr/selectableItemBackground"
+android:id="@+id/ll_rv_main_list">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+        <TextView android:id="@+id/tv_rv_list_date_fixed"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="date"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                    android:id="@+id/tv_rv_list_title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:text="title"
+                    android:layout_marginLeft="10dp"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+            />
+
+            <TextView
+                    android:id="@+id/tv_rv_list_title_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="time"
+                    android:layout_below="@+id/tv_rv_list_title_name"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#979797"
+                    android:includeFontPadding="false"
+            />
+<LinearLayout android:layout_width="46dp"
+                android:layout_height="46dp"
+              android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginHorizontal="8dp">
+
+
+            <ImageView
+                    android:id="@+id/iv_rv_list_responce_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_lens_black_18dp"
+            />
+
+    <TextView
+            android:id="@+id/tv_rv_list_responce_part_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:textColor="#ffffff"
+            android:paddingLeft="3dp"
+            android:textSize="10dp"
+            android:text="응답"/>
+    <TextView
+            android:id="@+id/tv_rv_list_responce_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:text="/"/>
+
+    <TextView
+            android:id="@+id/tv_rv_list_responce_all_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textColor="#ffffff"
+            android:paddingRight="3dp"
+            android:textSize="10dp"
+            android:text="전체"/>
+
+
+    </FrameLayout>
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

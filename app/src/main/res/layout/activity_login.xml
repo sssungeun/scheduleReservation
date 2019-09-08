@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--tools:context=".Activity.LoginActivity"-->
+        <!--android:theme="@style/MainTheme"-->
+
+    <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            android:paddingBottom="40dp"
+            android:gravity="center">
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/logo_img"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:id="@+id/imgLoginLogo"/>-->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="이메일 주소"
+                android:fontFamily="no"
+                android:textColorHint="#CECECE"
+                android:layout_marginTop="80dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/gray_border"
+                android:id="@+id/edtLoginID" android:textSize="18dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:textColorHint="#CECECE"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/gray_border"
+                android:id="@+id/edtLoginPW"
+                android:textSize="18dp"/>
+        <Button
+                android:text="로그인"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/primary_border_fill"
+                android:id="@+id/btnLoginSubmit"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#FFFFFF" android:textStyle="bold"/>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+            <TextView
+                    android:text="아직 회원이 아니십니까? "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLoginInfo"
+                    android:layout_weight="1"
+                    android:textColor="#C7C7C7"
+                    android:gravity="right" android:textSize="16dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+            <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=" 회원가입"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLoginSignup"
+                    android:layout_weight="1"
+                    android:textSize="15dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
